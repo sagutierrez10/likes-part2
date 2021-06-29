@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>likes-part2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>Network</nav>
+    <main class="content">
+        <div class="avatar-box gap-sm">
+            <img src="imag/user-circle.png" alt="user=icon">
+            <a href="https://www.fakelink.com"> Add an avatar </a>
+            <h1>James Doe</h1>
+        </div>
+        <div class="col2">
+            <h1>Your Feed</h1>
+            <div class="top-box d-flex-col gap-lg">
+                <div class="d-flex justify-content-bw">
+                    <h1 class="name-box">Neil M</h1>                
+                    <div class="likes-box d-flex align-items-center gap-md">
+                        <h2><span id="neil-likes"></span> Likes</h2>
+                        <button id="count" onclick="addLike(neilLikes)" >Like</button>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>I just set up this new discord bot, let me know what you all think. <span>link</span></p>
+                </div>
+            </div>
+            <div class="middle-box d-flex-col gap-lg">
+                <div class="d-flex justify-content-bw">
+                    <h1 class="name-box">Nichole K</h1>                
+                    <div class="likes-box d-flex align-items-center gap-md">
+                        <h2><span id="nichole-likes"></span> Likes</h2>
+                        <button id="count" onclick="addLike(nicholeLikes)">Like</button>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>Just finished my <span>next comic</span>, check it out.</p>
+                </div>
+            </div>
+            <div class="bottom-box d-flex-col gap-lg">
+                <div class="d-flex justify-content-bw">
+                    <h1 class="name-box">Jim R</h1>
+                    <div class="likes-box d-flex align-items-center gap-md">
+                        <h2><span id="jim-likes"></span> Likes</h2>
+                        <button id="count" onclick="addLike(jimLikes)" >Like</button>
+                    </div>
+                </div>    
+                <div class="text">
+                    <p>I can't stop listening to the <span>new album</span>. Who else is liking it?</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
